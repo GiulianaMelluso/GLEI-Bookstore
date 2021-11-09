@@ -17,6 +17,10 @@
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
+		<!-- FUENTES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" >
 
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -32,20 +36,20 @@
 		<!-- Barra de Navegacion -->
 		<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Bootstrap 4 One Page Website Tutorial</a>
+				<a class="navbar-titulo" href="index.html">Glei Bookstore</a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			        <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNav">
 			        <ul class="navbar-nav ml-auto">
 			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#top-content">Inicio</a>
+			                <a class="nav-link scroll-link" href="#encabezado">Inicio</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#services">Libros</a>
+			                <a class="nav-link scroll-link" href="#categorias">Libros</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link scroll-link" href="#about-us">Nosotros</a>
+			                <a class="nav-link scroll-link" href="#nosotros">Nosotros</a>
 			            </li>
 			        </ul>
 			    </div>
@@ -53,17 +57,18 @@
 		</nav>
 
         <!-- Encabezado -->
-        <div class="top-content">
+        <div class="encabezado">
             <div class="container">
-            	
                 <div class="row">
+					<!-- agregar imagen de fondo -->
                     <div class="col-md-8 offset-md-2 text">
-                        <h1 class="wow fadeInLeftBig">Glei Bookstore</h1>
+                        <h1 class="wow fadeInLeftBig">Glei</h1>
                         <div class="description wow fadeInLeftBig">
                         	<p>
                          	Los mejores libros importados de Argentina los encontras en Glei Bookstore
                         	</p>
                     </div>
+					<img src="assets\img\logoGlei.png" style="height: 500px">
                 </div>
                 
             </div>            
@@ -71,19 +76,19 @@
     </header>
         
         <!-- Categorias -->
-        <div class="services-container section-container">
+        <div class="categorias-container section-container">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col services section-description wow fadeIn">
+	                <div class="col categorias section-description wow fadeIn">
 	                    <h2>Nuestras categorias best seller</h2>
 	                    <div class="divider-1 wow fadeInUp"><span></span></div>
 	                </div>
 	            </div>
 	            <div class="row">
-                	<div class="col-md-3 services-box wow fadeInUp">
+                	<div class="col-md-3 categorias-box wow fadeInUp">
                 		<div class="row">
                 			<div class="col-md-4">
-			                	<div class="services-box-icon">
+			                	<div class="categorias-box-icon">
 			                		<i class="fas fa-magic"></i>
 			                	</div>
 		                	</div>
@@ -93,10 +98,10 @@
 	                    	</div>
 	                    </div>
                     </div>
-                    <div class="col-md-3 services-box wow fadeInDown">
+                    <div class="col-md-3 categorias-box wow fadeInDown">
 	                	<div class="row">
                 			<div class="col-md-4">
-			                	<div class="services-box-icon">
+			                	<div class="categorias-box-icon">
 			                		<i class="fas fa-cog"></i>
 			                	</div>
 		                	</div>
@@ -106,10 +111,10 @@
 	                    	</div>
 	                    </div>
                     </div>
-                    <div class="col-md-3 services-box wow fadeInUp">
+                    <div class="col-md-3 categorias-box wow fadeInUp">
 	                	<div class="row">
                 			<div class="col-md-4">
-			                	<div class="services-box-icon">
+			                	<div class="categorias-box-icon">
 			                		<i class="fab fa-google"></i>
 			                	</div>
 		                	</div>
@@ -119,15 +124,15 @@
 	                    	</div>
 	                    </div>
                     </div>
-                    <div class="col-md-3 services-box wow fadeInUp">
+                    <div class="col-md-3 categorias-box wow fadeInUp">
 	                	<div class="row">
                 			<div class="col-md-4">
-			                	<div class="services-box-icon">
+			                	<div class="categorias-box-icon">
 			                		<i class="fab fa-google"></i>
 			                	</div>
 		                	</div>
 	                		<div class="col-md-8">
-	                    		<h3>Ficcion y fantasia</h3>
+	                    		<h3>Horror</h3>
 	                    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 	                    	</div>
 	                    </div>
@@ -137,11 +142,11 @@
         </div>
 
         <!-- About us -->
-        <div class="about-us-container section-container section-container-gray-bg">
+        <div class="nosotros-container section-container section-container-gray-bg">
 	        <div class="container">
 	            <div class="row">
-	            	<div class="col-12 col-lg-7 about-us-box wow fadeInLeft">
-	                    <div class="about-us-box-text">
+	            	<div class="col-12 col-lg-7 nosotros-box wow fadeInLeft">
+	                    <div class="nosotros-box-text">
 	                    	<h3>Sobre nosotros</h3>
 	                    	<p class="medium-paragraph">
 	                    		En Glei Bookstore te traemos las mejores novedades a nivel mundial, desde su origen, a tu casa.
@@ -152,8 +157,8 @@
 	                    	
 	                    </div>
 	                </div>
-	                <div class="col-12 col-lg-5 about-us-box wow fadeInUp">
-	                	<div class="about-us-box-img">
+	                <div class="col-12 col-lg-5 nosotros-box wow fadeInUp">
+	                	<div class="nosotros-box-img">
 	                    	<img src="assets/img/about/1.jpg" alt="about" data-at2x="assets/img/about/1.jpg">
 	                    </div>
 	                </div>

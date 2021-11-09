@@ -17,7 +17,7 @@ h1, h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 38px;
     font-weight: 300;
-    color: #555;
+    color: #2ec4b6;
     line-height: 50px;
 }
 
@@ -25,24 +25,30 @@ h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
     font-weight: 300;
-    color: #555;
+    color: #ffbf69;
     line-height: 30px;
 }
 
-img { max-width: 100%; }
+/***** Barra navegacion *****/
 
-.medium-paragraph {
-	font-size: 17px;
-	line-height: 32px;
+.navbar {
+	background: #ffbf69;
+}
+.navbar.navbar-no-bg { background: #ffbf69;}
+
+.navbar-naranja .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; }
+.navbar-naranja .navbar-nav .nav-link { color: #fff;}
+.navbar-naranja .navbar-nav li:hover { color: #fff; }
+.navbar-naranja .navbar-nav li:focus { color: #fff; }
+
+.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
+
+.navbar-titulo {
+	color: #fff;
+	font-size: 25px;
 }
 
-.colored-text { color: #ffbf69; }
-
-::-moz-selection { background: #ffbf69; color: #fff; text-shadow: none; }
-::selection { background: #ffbf69; color: #fff; text-shadow: none; }
-
-
-/***** General style, all sections *****/
+/***** Estilo general *****/
 
 .section-container {
     margin: 0 auto;
@@ -153,6 +159,19 @@ img { max-width: 100%; }
 	box-shadow: none;
 }
 
+img { max-width: 100%; }
+
+.medium-paragraph {
+	font-size: 17px;
+	line-height: 32px;
+}
+
+.colored-text { color: #ffbf69; }
+
+::-moz-selection { background: #ffbf69; color: #fff; text-shadow: none; }
+::selection { background: #ffbf69; color: #fff; text-shadow: none; }
+
+
 
 /***** Divider *****/
 
@@ -163,33 +182,12 @@ img { max-width: 100%; }
 }
 
 
-/***** Top menu *****/
-
-.navbar {
-	background: #fff;
-	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
-	backface-visibility: hidden;
-}
-.navbar.navbar-no-bg { background: #fff;}
-
-.navbar-dark .navbar-nav { font-size: 15px; color: #000; font-weight: 600; }
-.navbar-dark .navbar-nav .nav-link { color: #000;}
-.navbar-dark .navbar-nav li:hover { color: #ffbf69; }
-.navbar-dark .navbar-nav li:focus { color: #ffbf69; }
-
-.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
-
-.navbar-brand {
-	width: 136px;
-	background: url(../img/logo.png) left center no-repeat;
-	border: 0;
-	text-indent: -99999px;
-}
 
 
-/***** Top content *****/
 
-.top-content {
+/***** Encabezado *****/
+
+.encabezado{
     padding: 210px 0;
 }
 
@@ -212,15 +210,14 @@ img { max-width: 100%; }
 	margin-top: 45px;
 }
 
+/***** Categorias *****/
 
-/***** Services *****/
-
-.services-box {
+.categorias-box {
 	padding-top: 30px;
 	text-align: left;
 }
 
-.services-box .services-box-icon {
+.categorias-box .categorias-box-icon {
 	width: 80px;
 	height: 80px;
 	margin: 0 auto;
@@ -240,7 +237,7 @@ img { max-width: 100%; }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
 }
 
-.services-box h3 {
+.categorias-box h3 {
 	margin-top: 0;
 	padding: 0 0 10px 0;
 }
@@ -248,40 +245,40 @@ img { max-width: 100%; }
 
 /***** About us *****/
 
-.about-us-box {
+.nosotros-box {
 	margin-top: 100px;
 }
 
-.about-us-box-text {
+.nosotros-box-text {
 	padding-right: 30px;
 	text-align: left;
 }
 
-.about-us-box-text h3 {
+.nosotros-box-text h3 {
 	margin-top: 0;
 }
 
-.about-us-box-text .medium-paragraph {
+.nosotros-box-text .medium-paragraph {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.about-us-box-text a { border-bottom: 1px dashed #ffbf69; }
-.about-us-box-text a:hover, .about-us-box-text a:focus { border: 0; }
+.nosotros-box-text a { border-bottom: 1px dashed #ffbf69; }
+.nosotros-box-text a:hover, .nosotros-box-text a:focus { border: 0; }
 
-.about-us-box-img img {
+.nosotros-box-img img {
 	border-radius: 4px;
 }
 
 
 /***** More services *****/
 
-.more-services-box {
+.more-categorias-box {
 	margin-top: 30px;
 	text-align: left;
 }
 
-.more-services-box .more-services-box-icon {
+.more-categorias-box .more-categorias-box-icon {
 	width: 60px;
 	height: 60px;
 	margin: 0 auto;
@@ -301,7 +298,7 @@ img { max-width: 100%; }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
 }
 
-.more-services-box h3 {
+.more-categorias-box h3 {
 	margin-top: 0;
 	padding: 0 0 10px 0;
 }
