@@ -8,7 +8,10 @@
 
 	/*COMPORTAMIENTO ENCABEZADO*/
 
-	.encabezado { padding: 140px 0; }
+	.carousel-inner{
+		height: 65vh;
+	}
+	.encabezado { padding: 50px 0; }
 	.encabezado.top-big-link { margin-top: 25px; }
 	.encabezado .top-big-link a.btn { margin-top: 10px; }
 	
@@ -32,7 +35,8 @@
 	.blog-box-image { max-width: 540px; margin: 0 auto; }
 	.blog-box h3 { margin-top: 30px; }
 	
-	footer { text-align: center; }
+	footer { text-align: center; 
+		flex-shrink: 0; }
 	.footer-right { padding-top: 10px; text-align: center; }
 	.footer-bottom { padding-top: 20px; }
 	
