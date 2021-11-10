@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -8,13 +7,21 @@ body {
     text-align: center;
 }
 
+
+img { max-width: 100%; }
+
 strong { font-weight: 600; }
 
-a, a:hover, a:focus { color: #ffbf69; text-decoration: none; transition: all .3s; }
+a, a:focus { color: #ffbf69; text-decoration: none; transition: all .3s; }
+
+a:hover {
+	color: #ff9f1c;
+	text-decoration: none;
+}
 
 h1, h2 {
 	margin-top: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 38px;
     font-weight: 300;
     color: #2ec4b6;
@@ -31,21 +38,32 @@ h3 {
 
 /***** Barra navegacion *****/
 
+.navbar-toggler-icon {
+	color: #fff;
+
+}
+.nav-item{
+	color: #fff;
+
+}
 .navbar {
 	background: #ffbf69;
 }
-.navbar.navbar-no-bg { background: #ffbf69;}
 
-.navbar-naranja .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; }
-.navbar-naranja .navbar-nav .nav-link { color: #fff;}
-.navbar-naranja .navbar-nav li:hover { color: #fff; }
-.navbar-naranja .navbar-nav li:focus { color: #fff; }
+   .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; font-family: 'Raleway';}
+   .navbar-nav .nav-link { color: #fff;}
+   .navbar-nav li:hover { color: #ff9f1c; }
+   .navbar-nav li:focus { color: #ff9f1c; }
 
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
+.nav-item {
+	color: #fff;
+}
 .navbar-titulo {
 	color: #fff;
 	font-size: 25px;
+	font-family: 'Raleway';
 }
 
 /***** Estilo general *****/
@@ -86,13 +104,13 @@ h3 {
 	padding-top: 60px;
 }
 
+/*Botones*/
 .btn-link-1 {
 	display: inline-block;
 	height: 50px;
 	margin: 0 5px;
 	padding: 0 28px;
 	background: #ffbf69;
-	background: rgba(155, 89, 182, 0.7);
 	border: 0;
 	font-size: 15px;
     font-weight: 600;
@@ -105,7 +123,6 @@ h3 {
 .btn-link-1.btn-primary:not(:disabled):not(.disabled):active,
 .btn-link-1.btn-primary:not(:disabled):not(.disabled):active:focus {
 	background: #ffbf69;
-	background: rgba(155, 89, 182, 0.9);
 	outline: 0;
 	color: #fff;
 	box-shadow: none;
@@ -158,8 +175,6 @@ h3 {
 	color: #ffbf69;
 	box-shadow: none;
 }
-
-img { max-width: 100%; }
 
 .medium-paragraph {
 	font-size: 17px;
@@ -226,15 +241,7 @@ img { max-width: 100%; }
     line-height: 80px;
     text-align: center;
     border-radius: 28px;
-    
-    background: #ffbf69; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffb24b 0%, #ffbf69 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#ffbf69)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffb24b 0%,#ffbf69 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
+    background: #ffbf69;
 }
 
 .categorias-box h3 {
@@ -243,7 +250,7 @@ img { max-width: 100%; }
 }
 
 
-/***** About us *****/
+/***** Nosotros *****/
 
 .nosotros-box {
 	margin-top: 100px;
@@ -287,15 +294,7 @@ img { max-width: 100%; }
     line-height: 60px;
     text-align: center;
     border-radius: 22px;
-    
-    background: #ffbf69; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffb24b 0%, #ffbf69 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#ffbf69)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffb24b 0%,#ffbf69 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
+    background: #ffbf69;
 }
 
 .more-categorias-box h3 {
@@ -377,15 +376,7 @@ img { max-width: 100%; }
 
 .testimonial-list .nav-tabs li a.active,
 .testimonial-list .nav-tabs li a.active:focus {
-	background: #ffbf69; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffb24b 0%, #ffbf69 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb24b), color-stop(100%,#ffbf69)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffb24b 0%,#ffbf69 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
-	
+	background: #ffbf69;
 	border: 0;
 }
 
@@ -471,16 +462,13 @@ footer {
 
 .footer-bottom a {
 	font-size: 32px;
-    color: #666;
+    color: #fff;
     line-height: 40px;
 }
 
-.footer-bottom a:hover, .footer-bottom a:focus { color: #888; 
-
-    background: -ms-linear-gradient(top,  #ffb24b 0%,#ffbf69 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ffb24b 0%,#ffbf69 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb24b', endColorstr='#ffbf69',GradientType=0 ); /* IE6-9 */
- 
+.footer-bottom a:hover, .footer-bottom a:focus { 
+	
+	color: #cbf3f0; 
     border: 0;
 }
 

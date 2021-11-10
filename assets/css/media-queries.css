@@ -1,9 +1,8 @@
 @media (max-width: 767px) {
 	
 	/*COMPORTAMIENTO BARRA NAVEGACION*/
-	.navbar.navbar-no-bg { background: #ffbf69; }
-	.navbar-naranja .navbar-toggler { border-color: #ffbf69; }
-	.navbar-naranja .navbar-toggler:focus { background: #ffbf69; outline: 0; }
+	.navbar-toggler { border-color: #fff; }
+	.navbar-toggler:focus { background: #fff; outline: 0; }
 	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 	.navbar-titulo {font-size: 1.5em;}
 
