@@ -11,6 +11,7 @@
 	.carousel-inner{
 		height: 65vh;
 	}
+
 	.encabezado { padding: 50px 0; }
 	.encabezado.top-big-link { margin-top: 25px; }
 	.encabezado .top-big-link a.btn { margin-top: 10px; }
@@ -44,7 +45,7 @@
 
 
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
 
 	.categorias-box .categorias-box-icon { width: 60px; height: 60px; font-size: 32px; line-height: 60px; border-radius: 22px; }
 	
@@ -52,9 +53,17 @@
 	
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px){
 	
-	.navbar-expand-md .navbar-nav .nav-link { padding-left: 0.6rem; padding-right: 0.6rem; }
+	.navbar{		
+		padding:0;
+		margin: 0;
+	}
+	.navbar-titulo {
+		font-size: 40px;
+		margin: 15px;
+	}
+	.navbar-expand-md .navbar-nav .nav-link { padding: 1rem; }
 	
 	.encabezado { padding: 180px 0; }
 

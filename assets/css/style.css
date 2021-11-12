@@ -46,28 +46,32 @@ h3 {
 	color: #fff;
 
 }
-.nav-item{
-	color: #fff;
-
-}
 .navbar {
 	background: #ffbf69;
+	padding:0;
+	margin: 0;
+}
+.nav-item, .nav-link {
+	color: white;
+}
+.nav-item:hover, .nav-link a:hover{
+	background: white;
 }
 
-   .navbar-nav { font-size: 15px; color: #fff; font-weight: 600; font-family: 'Raleway';}
-   .navbar-nav .nav-link { color: #fff;}
-   .navbar-nav li:hover { color: #ff9f1c; }
-   .navbar-nav li:focus { color: #ff9f1c; }
+.navbar-nav { 
+	font-size: 15px; 
+	color: #fff; 
+	font-weight: 600; 
+	font-family: 'Raleway', sans-serif;}
 
-.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
+.navbar-expand-md .navbar-nav .nav-link { 
+	padding-left: 1rem; 
+	padding-right: 1rem; }
 
-.nav-item {
-	color: #fff;
-}
 .navbar-titulo {
 	color: #fff;
 	font-size: 25px;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 }
 
 /***** Estilo general *****/
