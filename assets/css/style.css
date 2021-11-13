@@ -206,12 +206,14 @@ h3 {
 
 /**** Carrusel ****/
 .carousel-inner{
-    height: 30vh;
+}
+.carousel-inner.header img{
+	width: 100%;
+	height: auto;
 }
 
-.carousel-item{
+.carousel-item.header{
 	transition: 0.5s;
-	height: 30vh;
 	
 }
 
