@@ -419,6 +419,9 @@ footer {
 	color: black;
 	
 }
+#resumen .row{
+	margin: auto;
+}
 
 .tab-content>.active {
 	text-align: left;	
