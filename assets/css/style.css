@@ -206,12 +206,14 @@ h3 {
 
 /**** Carrusel ****/
 .carousel-inner{
-    height: 30vh;
+}
+.carousel-inner.header img{
+	width: 100%;
+	height: auto;
 }
 
-.carousel-item{
+.carousel-item.header{
 	transition: 0.5s;
-	height: 30vh;
 	
 }
 
@@ -358,18 +360,29 @@ footer {
 	text-align: left;
 	flex-shrink: 0;
 }
+.footer-link{
+	color:#ffbf69;
+	font-weight: bold;
+	
+}
 
 .footer-left a { color: #ddd; border-bottom: 1px dashed #ddd; }
 .footer-left a:hover, .footer-left a:focus { color: #ddd; border: 0; }
+.footer-left img{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;}
 
 .footer-right {
-	text-align: right;
+	text-align: center;
 }
 
 .footer-right a {
-	margin: 0 6px;
+	margin: 0 20px;
     font-size: 32px;
     color: #ddd;
+	margin-left: auto;	
 }
 .footer-right a:hover, .footer-right a:focus { color: #eee; }
 
