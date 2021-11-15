@@ -2,8 +2,7 @@
 	
 	/*COMPORTAMIENTO BARRA NAVEGACION*/
 	.navbar-toggler { border-color: #fff; }
-	.navbar-toggler:focus { background: #fff; outline: 0; }
-	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
+	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; background-color: #ffbf69;}
 	.navbar-titulo {font-size: 1.5em;}
 
 	.encabezado { padding: 50px 0; }
