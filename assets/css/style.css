@@ -405,7 +405,7 @@ footer {
 /***** Estilos de Tarjetas  *****/
 
 
-.profile-card-2 {
+.book-card-2 {
     max-width: 300px;
 	max-height: 500px;	
     background-color: #FFF;
@@ -418,7 +418,12 @@ footer {
     border-radius: 10px;
 }
 
-.profile-card-2 img {
+.book-card-2 img {
+    transition: all linear 0.25s;
+   
+}
+
+.book-card-2 img {
     transition: all linear 0.25s;
     width: auto;
     
@@ -426,33 +431,37 @@ footer {
 
 
 
-.profile-card-2 .profile-icons {
+.book-card-2 .book-icons {
     position: absolute;
     bottom: 10px;
-    right: 20px;
+    
     color: #FFF;
     transition: all linear 0.25s;
 }
 
 
-.profile-card-2 .profile-icons .fa {
+.book-card-2 .book-icons .fa {
     margin: 5px;
 }
 
-.profile-card-2:hover img {
+.book-card-2:hover img {
     filter: grayscale(100%);
 }
 
 
 
-
-.profile-card-2:hover .profile-icons {
-    right: 20px;
-}
-.profile-card-2 #precios 
+.tarjeta-precio 
 {
-	left: 10px;
+	color: white;
+	font-size: larger;
+	font-weight: bold;
+	left: 30px;
 }
+.tarjeta-detalles
+{
+	right: 20px;
+}
+
 /***** Estilos de Tarjetas Descripcion *****/
 
 
