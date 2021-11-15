@@ -6,12 +6,6 @@
 	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 	.navbar-titulo {font-size: 1.5em;}
 
-	/*COMPORTAMIENTO ENCABEZADO*/
-
-	.carousel-inner{
-		height: 65vh;
-	}
-
 	.encabezado { padding: 50px 0; }
 	.encabezado.top-big-link { margin-top: 25px; }
 	.encabezado .top-big-link a.btn { margin-top: 10px; }

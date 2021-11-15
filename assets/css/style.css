@@ -205,18 +205,10 @@ h3 {
 }
 
 /**** Carrusel ****/
-.carousel-inner{
-}
 .carousel-inner.header img{
 	width: 100%;
 	height: auto;
 }
-
-.carousel-item.header{
-	transition: 0.5s;
-	
-}
-
 
 /***** Encabezado *****/
 
@@ -343,13 +335,6 @@ h3 {
 	padding-top: 30px;
 }
 
-
-/***** Carrousel *****/
-
-.carousel-item{
-    height: 500px;
-
-}
 
 /***** Footer *****/
 
