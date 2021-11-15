@@ -15,19 +15,13 @@
 	.categorias-box { text-align: center; }
 	.categorias-box h3 { margin-top: 20px; padding-top: 10px; }
 	
+	
 	.nosotros-box { margin-top: 80px; }
 	.nosotros-box:last-child { margin-top: 50px; }
 	.nosotros-box-text { padding-right: 0; text-align: center; }
 	
 	.more-categorias-box { text-align: center; }
 	.more-categorias-box h3 { margin-top: 20px; padding-top: 10px; }
-	
-	.portfolio-box { text-align: center; }
-	.portfolio-box-image { max-width: 540px; margin: 0 auto; }
-	
-	.blog-box { text-align: center; }
-	.blog-box-image { max-width: 540px; margin: 0 auto; }
-	.blog-box h3 { margin-top: 30px; }
 	
 	footer { text-align: center; 
 		flex-shrink: 0; }
