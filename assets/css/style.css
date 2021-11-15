@@ -420,6 +420,11 @@ footer {
 
 .profile-card-2 img {
     transition: all linear 0.25s;
+   
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
     width: auto;
     
 }
@@ -429,7 +434,7 @@ footer {
 .profile-card-2 .profile-icons {
     position: absolute;
     bottom: 10px;
-    right: 20px;
+    
     color: #FFF;
     transition: all linear 0.25s;
 }
@@ -445,14 +450,18 @@ footer {
 
 
 
-
-.profile-card-2:hover .profile-icons {
-    right: 20px;
-}
-.profile-card-2 #precios 
+.tarjeta-precio 
 {
-	left: 10px;
+	color: white;
+	font-size: larger;
+	font-weight: bold;
+	left: 30px;
 }
+.tarjeta-detalles
+{
+	right: 20px;
+}
+
 /***** Estilos de Tarjetas Descripcion *****/
 
 
