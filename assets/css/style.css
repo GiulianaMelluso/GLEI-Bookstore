@@ -377,7 +377,12 @@ h3 {
 
 
 /***** Footer *****/
-
+.img-footer{
+	height: 25vh;
+}
+.img-header{
+	height: 50vh;
+}
 footer {
 	padding: 40px 0 0 0;
 	background: #2ec4b6;
@@ -426,6 +431,13 @@ footer {
 	
 	color: #cbf3f0; 
     border: 0;
+}
+
+i{
+	font-size: 30px;
+	color: white;
+	text-align:center;
+	align-self: center;
 }
 /***** Estilos de Tarjetas  *****/
 
