@@ -11,6 +11,8 @@
 	
 	.section-description p { padding: 0; }
 	
+	.btn-des {display:none;}
+	.btn-mob {display: block;}
 	.categorias-container { padding-bottom: 60px; }
 	.categorias-box { text-align: center; }
 	.categorias-box h3 { margin-top: 20px; padding-top: 10px; }
@@ -41,6 +43,9 @@
 }
 
 @media (min-width: 768px){
+
+	.btn-des {display:block;}
+	.btn-mob {display: none;}
 	
 	.navbar{		
 		padding:0;

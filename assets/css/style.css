@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -38,7 +41,9 @@ h3 {
     font-weight: 300;
     color: #ffbf69;
     line-height: 30px;
+	height: 5vh;
 }
+
 
 /***** Barra navegacion *****/
 
@@ -77,6 +82,16 @@ h3 {
 
 
 /***** Estilo general *****/
+
+.btn-naranja, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+	
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+    background-color: #ffbf69;
+	border: none;
+	
+}
+
 
 .section-container {
     margin: 0 auto;
@@ -248,6 +263,29 @@ h3 {
 }
 
 /***** Categorias *****/
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    border: none;
+;
+}
+.btn-primary{
+	background: #ffbf69;
+	color: #fff;
+	border: none;
+}
+.book-card-2{
+	padding: 5px;
+}
 
 .portada-categoria{
 	size: 10vw;
