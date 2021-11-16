@@ -55,7 +55,8 @@ h3 {
 	color: white;
 }
 .nav-item:hover, .nav-link a:hover{
-	background: white;
+	background:#ff9f1c;
+	color: #fff;
 }
 
 .navbar-nav { 
@@ -70,9 +71,10 @@ h3 {
 
 .navbar-titulo {
 	color: #fff;
-	font-size: 25px;
+	font-size: 1em;
 	font-family: 'Raleway', sans-serif;
 }
+
 
 /***** Estilo general *****/
 
@@ -154,7 +156,7 @@ h3 {
 .btn-link-2:hover, .btn-link-2:focus, .btn-link-2:active, .btn-link-2:active:focus,
 .btn-link-2.btn-primary:not(:disabled):not(.disabled):active,
 .btn-link-2.btn-primary:not(:disabled):not(.disabled):active:focus {
-	background: #333; background: rgba(0, 0, 0, 0.4); outline: 0; color: #fff; box-shadow: none;
+	background: #333; background: rgba(0, 0, 0, 0.4); outline: 0; color: #ffbf69; box-shadow: none;
 }
 
 .btn-link-3 {
@@ -247,15 +249,17 @@ h3 {
 
 /***** Categorias *****/
 
-.portada-categorias{
+.portada-categoria{
 	size: 10vw;
 	border-radius: 30px;
 	padding: 20px;
 }
+
 .categorias-box {
 	padding-top: 30px;
 	margin-top: 30px;
 	text-align: left;
+	border-radius: 10px;
 }
 
 .categorias-box .categorias-box-icon {
