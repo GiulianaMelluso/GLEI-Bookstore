@@ -252,14 +252,12 @@ h3 {
 .portada-categoria{
 	size: 10vw;
 	border-radius: 30px;
-	padding: 20px;
 }
 
 .categorias-box {
 	padding-top: 30px;
 	margin-top: 30px;
 	text-align: left;
-	border-radius: 10px;
 }
 
 .categorias-box .categorias-box-icon {
