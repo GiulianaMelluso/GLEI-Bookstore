@@ -8,7 +8,10 @@
 	.encabezado { padding: 50px 0; }
 	.encabezado.top-big-link { margin-top: 25px; }
 	.encabezado .top-big-link a.btn { margin-top: 10px; }
-	
+
+	.img-fluid{
+		height: 20vh;
+	}
 	.section-description p { padding: 0; }
 	
 	.btn-des {display:none;}

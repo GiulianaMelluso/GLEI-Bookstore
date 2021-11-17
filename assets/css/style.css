@@ -1,6 +1,11 @@
 html{
 	scroll-behavior: smooth;
 }
+* {
+	margin:  0;
+	padding: 0;
+  }
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -9,11 +14,12 @@ body {
     line-height: 30px;
     text-align: center;
 }
-
-* {
-	margin:  0;
-	padding: 0;
-  }
+i {
+	font-size: 30px;
+	color: white;
+	text-align:center;
+	align-self: center;
+}
 
 img { max-width: 100%; }
 
@@ -81,17 +87,17 @@ h3 {
 }
 
 
-/***** Estilo general *****/
-
-.btn-naranja, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-	
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-    background-color: #ffbf69;
-	border: none;
+.nav-tabs .nav-link {
+	color: black;
 	
 }
 
+.nav-tabs .nav-link:hover
+{
+	color: #ffbf69;
+}
+
+/***** Estilo general *****/
 
 .section-container {
     margin: 0 auto;
@@ -108,7 +114,7 @@ h3 {
 	color: #fff;
 }
 
-.section-container-image-bg .divider-1 span {
+.section-container-image-bg .divisor-1 span {
 	border-color: #fff;
 }
 
@@ -128,6 +134,17 @@ h3 {
 .section-bottom-button {
 	padding-top: 60px;
 }
+
+
+.medium-paragraph {
+	font-size: 17px;
+	line-height: 32px;
+}
+
+.colored-text { color: #ffbf69; }
+
+::-moz-selection { background: #ffbf69; color: #fff; text-shadow: none; }
+::selection { background: #ffbf69; color: #fff; text-shadow: none; }
 
 /*Botones*/
 .btn-link-1 {
@@ -201,21 +218,25 @@ h3 {
 	box-shadow: none;
 }
 
-.medium-paragraph {
-	font-size: 17px;
-	line-height: 32px;
+.btn-naranja, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+	
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+    background-color: #ffbf69;
+	border: none;
+	
 }
 
-.colored-text { color: #ffbf69; }
 
-::-moz-selection { background: #ffbf69; color: #fff; text-shadow: none; }
-::selection { background: #ffbf69; color: #fff; text-shadow: none; }
+.btn-primary{
+	background: #ffbf69;
+	color: #fff;
+	border: none;
+}
 
+/***** divisor *****/
 
-
-/***** Divider *****/
-
-.divider-1 span {
+.divisor-1 span {
 	display: inline-block;
 	width: 200px;
 	border-bottom: 1px dashed #ccc;
@@ -243,28 +264,28 @@ h3 {
 	width: 100vw;
 }
 
-.top-content .text {
+.encabezado .text {
 	color: #fff;
 }
 
-.top-content .text h1 {
+.encabezado .text h1 {
 	margin-top: 25px;
 	color: #fff;
 }
 
-.top-content .description {
+.encabezado .description {
 	margin: 30px 0 10px 0;
 }
 
-.top-content .description p { opacity: 0.8; }
+.encabezado .description p { opacity: 0.8; }
 
-.top-content .top-big-link {
+.encabezado .top-big-link {
 	margin-top: 45px;
 }
 
 /***** Categorias *****/
 
-.card {
+.tarjeta {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -278,12 +299,7 @@ h3 {
     border: none;
 ;
 }
-.btn-primary{
-	background: #ffbf69;
-	color: #fff;
-	border: none;
-}
-.book-card-2{
+.libro-tarjeta-2{
 	padding: 5px;
 }
 
@@ -369,19 +385,20 @@ h3 {
 }
 
 
-/***** Call to action *****/
-
-.call-to-action-container .section-bottom-button {
-	padding-top: 30px;
-}
-
-
 /***** Footer *****/
 .img-footer{
 	height: 25vh;
 }
+.img-nav{
+	height: 5vh;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .img-header{
 	height: 50vh;
+}
+.img-fluid{
+	height: 30vh;
 }
 footer {
 	padding: 40px 0 0 0;
@@ -433,16 +450,10 @@ footer {
     border: 0;
 }
 
-i{
-	font-size: 30px;
-	color: white;
-	text-align:center;
-	align-self: center;
-}
 /***** Estilos de Tarjetas  *****/
 
 
-.book-card-2 {
+.libro-tarjeta-2 {
     max-width: 300px;
 	max-height: 500px;	
     background-color: #FFF;
@@ -455,20 +466,18 @@ i{
     border-radius: 10px;
 }
 
-.book-card-2 img {
+.libro-tarjeta-2 img {
     transition: all linear 0.25s;
    
 }
 
-.book-card-2 img {
+.libro-tarjeta-2 img {
     transition: all linear 0.25s;
     width: auto;
     
 }
 
-
-
-.book-card-2 .book-icons {
+.libro-tarjeta-2 .libro-icons {
     position: absolute;
     bottom: 10px;
     
@@ -477,11 +486,11 @@ i{
 }
 
 
-.book-card-2 .book-icons .fa {
+.libro-tarjeta-2 .libro-icons .fa {
     margin: 5px;
 }
 
-.book-card-2:hover img {
+.libro-tarjeta-2:hover img {
     filter: grayscale(100%);
 }
 
@@ -512,10 +521,6 @@ i{
     background: #fff;
 }
 
-.nav-tabs .nav-link {
-	color: black;
-	
-}
 #resumen .row{
 	margin: auto;
 }
@@ -524,8 +529,4 @@ i{
 	text-align: left;	
 }
 
-.nav-tabs .nav-link:hover
-{
-	color: #ffbf69;
-}
 
