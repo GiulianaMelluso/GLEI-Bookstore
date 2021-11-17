@@ -35,3 +35,6 @@ var bsCollapse = new bootstrap.Collapse(myCollapse, {
   toggle: false
 })
 
+$('#myModal').on('shown.bs.modal', function () {
+	$('#myInput').trigger('focus')
+  })

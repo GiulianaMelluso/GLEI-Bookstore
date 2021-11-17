@@ -36,7 +36,8 @@
 		<!-- Barra de Navegacion -->
 		<nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
 			<div class="container">
-				<a class="navbar-titulo" href="index.html"><img src="assets/img/logoGlei-no-border.png" class="img-nav">Glei Bookstore</a>
+				<a class="navbar-titulo" href="index.html"><img src="assets/img/logoGlei-no-border.png"
+						class="img-nav">Glei Bookstore</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -109,14 +110,14 @@
 				<!-- agregar imagen de fondo -->
 
 				<img src="assets\img\logoGlei.png" class="img-header">
-					<h2>
-						Los mejores libros importados de Argentina los encontras en Glei Bookstore
-					</h2>
+				<h2>
+					Los mejores libros importados de Argentina los encontras en Glei Bookstore
+				</h2>
 			</div>
 		</div>
 	</div>
 
-	
+
 	<!-- Novedades -->
 
 	<div class="novedades-container section-container">
@@ -132,24 +133,16 @@
 				<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
 					<div class="carousel-inner w-100" role="listbox">
 						<div class="carousel-item row no-gutters active">
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/1.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/2.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/3.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/4.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/1.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/2.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/3.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/4.jpg"></div>
 						</div>
 						<div class="carousel-item row no-gutters">
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/5.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/6.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/7.jpg"></div>
-							<div class="col-3 float-left"><img class="img-fluid"
-									src="assets/img/novedades/8.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/5.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/6.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/7.jpg"></div>
+							<div class="col-3 float-left"><img class="img-fluid" src="assets/img/novedades/8.jpg"></div>
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
@@ -279,15 +272,14 @@
 				</div>
 			</div>
 
-			<!-- COLLAPSE 1-->
+			<!-- CATEGORIA ROMANCE -->
 
 			<div class="collapse collapse-horizontal" id="collapse1">
 				<h2>Titulos de romance</h2>
 				<div class="tarjeta tarjeta-body">
 
-					<!-- TARJETAS ACA -->
 
-
+					<!-- PRODUCTO 1 (USAR COMO PLANTILLA PARA COPIAR Y PEGAR)-->
 					<div class="row">
 						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
 							<div class="libro-icons tarjeta-precio">
@@ -295,127 +287,87 @@
 							</div>
 							<div class="libro-icons tarjeta-detalles">
 								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
+									<!-- BOTON PARA ABRIR EL MODAL-->
+									<i class="fas fa-libro-open"></i>
+									<a href="#modal-prod-1" data-toggle="modal"	data-target="#modal-prod-1">
+										<span style="color: white;">
+											Ver Detalle
+										</span>
+									</a>
 								</p>
 							</div>
+
+							<!-- MODAL -->
+							<div class="modal fade" id="modal-prod-1" tabindex="-1" role="dialog"
+							aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+
+									<!-- TITULO DEL MODAL-->
+									<div class="modal-header">
+										<h5 class="modal-title">TITULO DEL LIBRO</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+
+									<!-- CUERPO DEL MODAL -->
+									<div class="modal-body">
+										ACA VA LA INFO
+									</div>
+
+									<!-- BOTONES DEL MODAL-->
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary"
+											data-dismiss="modal">Cerar</button>
+									</div>
+								</div>
+							</div>
+						</div>
 						</div>
 
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
+						<!-- PRODUCTO 2 AQUI -->
+
 					</div>
 				</div>
 			</div>
 
-			<!-- COLLAPSE 2-->
+			<!-- CATEGORIA CRIMEN Y MISTERIO -->
 
 			<div class="collapse collapse-horizontal" id="collapse2">
 				<h2>Titulos de crimen y misterio</h2>
 				<div class="tarjeta tarjeta-body">
+					<!-- PRODUCTO 1 -->
 
-					<!-- TARJETAS ACA -->
+					<!-- PRODUCTO 2 -->
 
-
-					<div class="row">
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
-			<!-- COLLAPSE 3-->
+			<!-- CATEGORIA FICCION Y FANTASIA-->
 
 			<div class="collapse collapse-horizontal" id="collapse3">
 				<h2>Titulos de ficcion y fantasia</h2>
 				<div class="tarjeta tarjeta-body">
 
-					<!-- TARJETAS ACA -->
+					<!-- PRODUCTO 1 -->
 
+					<!-- PRODUCTO 2 -->
 
-					<div class="row">
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
-			<!-- COLLAPSE 4-->
+			<!-- CATEGORIA HORROR -->
 
 			<div class="collapse collapse-horizontal" id="collapse4">
 				<h2>Titulos de Horror</h2>
 				<div class="tarjeta tarjeta-body">
 
-					<!-- TARJETAS ACA -->
+					<!-- PRODUCTO 1 -->
 
+					<!-- PRODUCTO 2 -->
 
-					<div class="row">
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-
-						<div class="libro-tarjeta-2"><img src="assets/img/Libros/Libro6.jpg" class="img img-responsive">
-							<div class="libro-icons tarjeta-precio">
-								<p class="tarjeta-precio">$400</p>
-							</div>
-							<div class="libro-icons tarjeta-detalles">
-								<p>
-									<i class="fas fa-libro-open"></i> Ver Detalle
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
