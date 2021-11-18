@@ -300,10 +300,6 @@ h3 {
     min-width: 0;
     word-wrap: break-word;
     border: none;
-;
-}
-.libro-tarjeta-2{
-	padding: 5px;
 }
 
 .portada-categoria{
@@ -464,20 +460,16 @@ footer {
     background-position: center;
     overflow: hidden;
     position: relative;
-    margin: 10px auto;
+    margin: 5px auto;
+	padding: 5px;
     cursor: pointer;
     border-radius: 10px;
 }
 
 .libro-tarjeta-2 img {
     transition: all linear 0.25s;
+	width:90%;
    
-}
-
-.libro-tarjeta-2 img {
-    transition: all linear 0.25s;
-    width: auto;
-    
 }
 
 .libro-tarjeta-2 .libro-icons {
