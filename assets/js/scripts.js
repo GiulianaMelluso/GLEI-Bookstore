@@ -22,14 +22,14 @@ jQuery(document).ready(function() {
 		scroll_to($(this), $('nav').outerHeight());
 	});
 
-	let productoBase = $(".plantilla .producto");
+	//let productoBase = $(".plantilla .producto");
     let libros;
 
     function descargar_productos() {
+		let baseModal = $(".plantilla-modal");
         console.log("BUSCANDO PRODUCTOS");
 
         $.ajax({
-            //url: 'http://localhost:3000/users',
             url: 'https://my-json-server.typicode.com/ivanperazzo/glei-api-server/libros',
             type: 'GET',
             dataType: 'json',
@@ -38,14 +38,15 @@ jQuery(document).ready(function() {
                 console.log("RESPUESTA OK");
                 libros = data;
                 console.log(libros);
-                for (producto of data) {
-                    let nuevoProducto = productoBase.clone();
+                for (libro of data) {
+                    let nuevoModal = baseModal.clone();
+					nuevoModal.find(".modal.fade").attr('id', libro.isbn);
+					console.log(nuevoModal.find(".modal.fade").attr('id', libro.isbn));
+                    nuevoModal.find(".modal-title").text(libro.titulo);					
+                    nuevoModal.find(".card-text.texto1").text(libro.sinopsis);
+                    nuevoModal.find(".card-img").attr({src:'assets/img/Libros/'+libro.portada,title:libro.titulo,alt:libro.titulo});
 
-                    nuevoProducto.find(".nombre").text(producto.title);
-                    nuevoProducto.find(".edad").text(producto.subtitle);
-                    nuevoProducto.find(".id").text(producto.publisher);
-
-                    $("#ProductosContenedor").append(nuevoProducto);
+                    $("#modales").append(nuevoModal);
                 }
             },
 
@@ -58,36 +59,35 @@ jQuery(document).ready(function() {
     descargar_productos();
 
     function MostrarPorCategoria(categoria){
-        $("#div-libros").empty();
+        $(".mostrar-libros-"+categoria).empty();
         // Loop on JSON.Products
-        for (item of libros) {
-            // Compare to item instead of this
-            if(categoria == item.categoria) {
-                console.log(item)
+        for (libro of libros) {
+            // Compare to libro instead of this
+            if(categoria == libro.categoria.toLowerCase()) {
+                console.log(libro)
                 $('<div/>', {'class':'libro-tarjeta-2'}).append(
-                    $('<img>').attr({src:'assets/img/Libros/'+item.portada,title:item.titulo,alt:item.titulo,class:'img img-responsive'}),
+                    $('<img>').attr({src:'assets/img/Libros/'+libro.portada,title:libro.titulo,alt:libro.titulo,class:'img img-responsive'}),
                     $('<div/>', {'class':'libro-icons tarjeta-precio'}).append(
                         $('<p/>', {'class':'tarjeta-precio'})
-                        .text('$'+item.precio)						
+                        .text('$'+libro.precio)						
                     ),
 					$('<div/>', {'class':'libro-icons tarjeta-detalles'}).append(
 						$('<p/>').append(
+							$('<a/>').attr({href:'#'+libro.isbn,'data-toggle':'modal','data-target':'#'+libro.isbn}).append(
                         	$('<i/>', {'class':'fas fa-libro-open'})
-                    	).text('Ver Detalle')
+                    	).text('Ver Detalle'))
 					)
-                ).appendTo("#div-libros"); // .products instead of #products cause you're using a class
+                ).appendTo(".mostrar-libros-"+categoria); // .products instead of #products cause you're using a class
             }
         };
     }
     $('.obtenerLibrosPorCategoria').click(function(data) {
-        var categoria = $(this).attr('value');
+        var categoria = $(this).attr('value').toLowerCase() ;
         console.log(categoria);
         MostrarPorCategoria(categoria);
-    });  
-		
+    });  	
+	var $misCollapse = $('#misCollapse');
+	$misCollapse.on('show.bs.collapse','.collapse', function() {
+    $misCollapse.find('.collapse.in').collapse('hide');
+});	
 });
-
-
-$('#myModal').on('shown.bs.modal', function () {
-	$('#myInput').trigger('focus')
-  })
