@@ -102,10 +102,13 @@ h3 {
 .section-container {
     margin: 0 auto;
     padding-bottom: 80px;
+	align-content: center;
 }
 
 .section-container-gray-bg {
 	background: #f8f8f8;
+	
+	align-content: center;
 }
 
 .section-container-image-bg, 
