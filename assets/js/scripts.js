@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
 	let productoBase = $(".plantilla .producto");
     let libros;
 
-    function buscar_productos() {
+    function descargar_productos() {
         console.log("BUSCANDO PRODUCTOS");
 
         $.ajax({
@@ -36,7 +36,6 @@ jQuery(document).ready(function() {
 
             success: function(data){ // Funcion de callback
                 console.log("RESPUESTA OK");
-                console.log(data);
                 libros = data;
                 console.log(libros);
                 for (producto of data) {
@@ -56,7 +55,7 @@ jQuery(document).ready(function() {
         });
     }
 
-    buscar_productos();
+    descargar_productos();
 
     function MostrarPorCategoria(categoria){
         $("#div-libros").empty();
@@ -80,7 +79,7 @@ jQuery(document).ready(function() {
             }
         };
     }
-    $('.getProductsByCat').click(function(data) {
+    $('.obtenerLibrosPorCategoria').click(function(data) {
         var categoria = $(this).attr('value');
         console.log(categoria);
         MostrarPorCategoria(categoria);
