@@ -99,6 +99,14 @@ h3 {
 
 /***** Estilo general *****/
 
+.titulos{
+	font-weight: bold;
+}
+
+.detalles{
+	text-align: left;
+}
+
 .section-container {
     margin: 0 auto;
     padding-bottom: 80px;

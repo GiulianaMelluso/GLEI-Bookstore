@@ -42,8 +42,16 @@ jQuery(document).ready(function() {
                     let nuevoModal = baseModal.clone();
 					nuevoModal.find(".modal.fade").attr('id', libro.isbn);
 					console.log(nuevoModal.find(".modal.fade").attr('id', libro.isbn));
-                    nuevoModal.find(".modal-title").text(libro.titulo);					
-                    nuevoModal.find(".card-text.texto1").text(libro.sinopsis);
+                    nuevoModal.find(".modal-title").text(libro.titulo);
+                    nuevoModal.find(".card-text.editorial").text(libro.editorial);
+                    nuevoModal.find(".card-text.fechapub").text(libro.fecha_publicacion);
+                    nuevoModal.find(".card-text.tipoenc").text(libro.encuadernacion);
+                    nuevoModal.find(".card-text.idioma").text(libro.idioma);
+                    nuevoModal.find(".card-text.paginas").text(libro.paginas);
+                    nuevoModal.find(".card-text.isbn").text(libro.isbn);
+                    nuevoModal.find(".card-text.sinopsis").text(libro.sinopsis);
+
+
                     nuevoModal.find(".card-img").attr({src:'assets/img/Libros/'+libro.portada,title:libro.titulo,alt:libro.titulo});
 
                     $("#modales").append(nuevoModal);
